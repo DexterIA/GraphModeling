@@ -93,7 +93,12 @@ graphUtils.getGraph = function (vertexCount, radius) {
   return adjacencyMatrix;
 };
 
-
+/**
+ * Считает количество рёбер и выводит среднее значение
+ * @param {Number} vertexCount - количество вершин
+ * @param {Number} radius - радиус окружности
+ * @returns {Number} - среденее значение степени вершины в графе
+ */
 graphUtils.getAverageDegreesOfAVertex = function (vertexCount, radius) {
   let matrix = graphUtils.getGraph(vertexCount, radius),
     edgeCount = 0;
